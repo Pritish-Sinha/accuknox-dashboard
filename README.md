@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# AccuKnox Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AccuKnox Dashboard is a dynamic and customizable dashboard application built using ReactJS, Vite, Tailwind CSS, and Redux. The dashboard allows users to create, manage, and customize widgets within different categories, providing a flexible and interactive interface.
 
-Currently, two official plugins are available:
+## Key Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **ReactJS**: A JavaScript library for building user interfaces.
+- **Vite**: A next-generation front-end tool for development and build.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Redux**: A JS library for predictable and maintainable global state management.
+- **JavaScript (ES6+)**: For functionality and logic implementation.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Dynamic Dashboard Creation**:
+   - The dashboard is built dynamically using a JSON configuration.
+   - The JSON structure contains categories, each with multiple widgets.
 
-- Configure the top-level `parserOptions` property like this:
+2. **Widget Management**:
+   - Users can dynamically add or remove widgets within categories.
+   - For each widget, users can input the widget name and text.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. **Customizable Categories**:
+   - Categories like "CSPM Executive Dashboard" can be created, with widgets assigned to them.
+   - Users can add or remove widgets from categories easily.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+4. **Search Functionality**:
+   - Users can search through a list of all widgets, making it easier to find specific widgets within the dashboard.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v14 or later)
+- npm (v6 or later)
+
+### Installation
+
+1. **Clone the repository**:
+   ```
+   git clone https://github.com/Pritish-Sinha/accuknox-dashboard.git
+   cd accuknox-dashboard
+   ```
+2. Install dependencies
+   ```
+   npm install
+   ```
+3. Run the development server
+   ```
+   npm run dev
+   ```
